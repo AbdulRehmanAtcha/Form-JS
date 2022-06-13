@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="form-head">
+                <h2>Registration</h2>
+                <!-- <hr> -->
+            </div>
+            <div class="form-body">
+                <div class="horizontal-boxes">
+                    <div class="f-name">
+                        <h3>First Name</h3>
+                        <input type="text" placeholder="Enter Your Name" id="NAME">
+                        <br>
+                        <span id="f-name-error"></span>
+                    </div>
+                    <div class="l-name">
+                        <h3>Last Name</h3>
+                        <input type="text" placeholder="Enter Your UserName" id="L-NAME">
+                        <br>
+                        <span id="l-name-error"></span>
+                    </div>
+                </div>
+                <div class="email">
+                    <h3>Email</h3>
+                    <input type="email" placeholder="Enter Your Email">
+                </div>
+                <div class="horizontal-boxes">
+                    <div class="password">
+                        <h3>Password</h3>
+                        <input type="password" placeholder="Enter Your Password" id="password">
+                        <br>
+                        <span id="pass"></span>
+                    </div>
+                    <div class="confirm-password">
+                        <h3>Confirm Password</h3>
+                        <input type="password" placeholder="Re-Enter Your Password" id="con-password">
+                        <br>
+                        <span id="con-pass"></span>
+                    </div>
+                </div>
+                <!-- <div class="gender">
+                    <h3>Enter Your Gender</h3>
+                    <input type="radio" name="gender" id="gender"> <label for="">Male</label>
+                    <input type="radio" name="gender" id="gender"> <label for="">Female</label>
+                </div> -->
+                <br>
+                <div class="gender">
+                    <h3>Gender</h3>
+                    <table>
+                        <tr>
+                            <th colspan="15"><input type="radio" name="gender" id=""  checked>Male</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="5"><input type="radio" name="gender" id="">Female</th>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="form-foot">
+                    <button  onClick="show()">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
